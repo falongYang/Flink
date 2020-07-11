@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="620bf092-aa0a-45fc-a277-35e299eed3b4" name="Default Changelist" comment="flink的测试&#10;包括&#10;kafkasource&#10;esSink&#10;mysqlSource&#10;kuduSource&#10;kuduSink">
+    <list default="true" id="620bf092-aa0a-45fc-a277-35e299eed3b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -20,7 +20,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
+            <state relative-caret-position="336">
               <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -32,8 +32,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1435">
-              <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+            <state relative-caret-position="1656">
+              <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,7 +44,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/MapData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
+            <state relative-caret-position="4584">
               <caret line="234" column="1" selection-start-line="234" selection-start-column="1" selection-end-line="234" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -60,7 +60,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/mysql/MysqlSourceUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1008">
+            <state relative-caret-position="1224">
               <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -72,8 +72,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSourceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="194">
-              <caret line="20" column="70" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="70" />
+            <state relative-caret-position="408">
+              <caret line="20" column="70" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource2Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -82,10 +94,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource2Test.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/flink/FlinkSinkToES.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="124">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="288">
+              <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -219,7 +231,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,6 +241,11 @@
             <path>
               <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
               <item name="Flink" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Flink" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,170 +277,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="dfec" type="462c0819:PsiDirectoryNode" />
               <item name="flink" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="flink" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkSinkToES" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="flink" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkSourceKafka" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusink1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusink1" type="462c0819:PsiDirectoryNode" />
-              <item name="SinkTest" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusink2" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusink2" type="462c0819:PsiDirectoryNode" />
-              <item name="KuduSinkTest2" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusourcce" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusourcce" type="462c0819:PsiDirectoryNode" />
-              <item name="KuduSource2" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusourcce" type="462c0819:PsiDirectoryNode" />
-              <item name="KuduSource2Test" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusourcce" type="462c0819:PsiDirectoryNode" />
-              <item name="KuduSourceTest" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="kudusourcce" type="462c0819:PsiDirectoryNode" />
-              <item name="MapData" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="kudu" type="462c0819:PsiDirectoryNode" />
-              <item name="KuduInputFormat" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="FlinkSourceMysql" type="1a9f42e2:ClassTreeNode" />
-            </path>
-            <path>
-              <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Flink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="dfec" type="462c0819:PsiDirectoryNode" />
-              <item name="mysql" type="462c0819:PsiDirectoryNode" />
-              <item name="MysqlSourceUtils" type="1a9f42e2:ClassTreeNode" />
             </path>
             <path>
               <item name="Flink" type="b2602c69:ProjectViewProjectNode" />
@@ -469,6 +321,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -477,7 +330,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../sparkhive" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../flinkStreamSQL-1.8_release" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -653,7 +506,8 @@
       <workItem from="1594196023051" duration="15000" />
       <workItem from="1594198554173" duration="2901000" />
       <workItem from="1594255355724" duration="18013000" />
-      <workItem from="1594341166547" duration="19774000" />
+      <workItem from="1594341166547" duration="20646000" />
+      <workItem from="1594428793056" duration="456000" />
     </task>
     <task id="LOCAL-00001" summary="flink的测试&#10;包括&#10;kafkasource&#10;esSink&#10;mysqlSource&#10;kuduSource&#10;kuduSink">
       <created>1594370336534</created>
@@ -662,16 +516,23 @@
       <option name="project" value="LOCAL" />
       <updated>1594370336535</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="flink的测试&#10;包括&#10;kafkasource&#10;esSink&#10;mysqlSource&#10;kuduSource&#10;kuduSink">
+      <created>1594370994851</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594370994851</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142833000" />
+    <option name="totallyTimeSpent" value="144161000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1064" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22973698" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.150832" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -680,13 +541,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295063" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.30769232" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.30769232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3295063" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.3295063" />
@@ -1078,16 +939,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/flink/FlinkSinkToES.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusink2/KuduTableInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1173,8 +1024,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
+        <state relative-caret-position="336">
           <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="76" column="46" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1183,7 +1044,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/MapData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
+        <state relative-caret-position="4584">
           <caret line="234" column="1" selection-start-line="234" selection-start-column="1" selection-end-line="234" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1197,7 +1058,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/mysql/MysqlSourceUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1008">
+        <state relative-caret-position="1224">
           <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1207,18 +1068,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSourceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="20" column="70" lean-forward="true" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="70" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1435">
-          <caret line="76" column="46" lean-forward="true" selection-start-line="76" selection-start-column="46" selection-end-line="76" selection-end-column="46" />
+        <state relative-caret-position="408">
+          <caret line="20" column="70" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1227,8 +1078,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/kudu/kudusourcce/KuduSource2Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="384">
+          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/dfec/flink/FlinkSinkToES.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
