@@ -49,10 +49,20 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-table -->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-table</artifactId>
             <version>1.9.0</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-table_2.11</artifactId>
+            <version>1.7.0</version>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-connector-kafka-0.11 -->
@@ -85,12 +95,14 @@
                 </exclusion>
             </exclusions>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
             <artifactId>httpclient</artifactId>
-            <version>4.5.3</version>
+            <version>4.5.12</version>
         </dependency>
-        <!--kafka-->
+
+        <!--kafka-flink-->
         <dependency>
             <groupId>org.apache.flink</groupId>
             <artifactId>flink-connector-kafka-0.11_2.11</artifactId>
@@ -172,11 +184,13 @@
             <artifactId>lombok</artifactId>
             <version>1.18.4</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
         <dependency>
             <groupId>com.google.guava</groupId>
             <artifactId>guava</artifactId>
-            <version>24.1.1-jre</version>
+            <version>26.0-jre</version>
         </dependency>
+
         <dependency>
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
@@ -211,16 +225,60 @@
             <artifactId>jackson-core</artifactId>
             <version>2.8.11</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.34</version>
+            <version>8.0.22</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.cloudera/ImpalaJDBC41 -->
         <dependency>
             <groupId>com.cloudera</groupId>
             <artifactId>ImpalaJDBC41</artifactId>
             <version>2.6.3</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.cloudera.impala/ImpalaJDBC41 -->
+<!--        <dependency>-->
+<!--            <groupId>com.cloudera.impala</groupId>-->
+<!--            <artifactId>ImpalaJDBC41</artifactId>-->
+<!--            <version>2.6.3</version>-->
+<!--        </dependency>-->
+
+
+
+        <!--        flink机器学习依赖 -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-ml_2.11</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+<!--c3p0-->
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
+        </dependency>
+<!--        mysql-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.19</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.ethz.ganymed</groupId>
+            <artifactId>ganymed-ssh2</artifactId>
+            <version>262</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.46</version>
+        </dependency>
+
 
     </dependencies>
 
@@ -230,7 +288,7 @@
             <plugin>
                 <groupId>net.alchim31.maven</groupId>
                 <artifactId>scala-maven-plugin</artifactId>
-                <version>3.4.6</version>
+                <version>3.2.2</version>
                 <executions>
                     <execution>
                         <!-- 声明绑定到maven的compile阶段 -->

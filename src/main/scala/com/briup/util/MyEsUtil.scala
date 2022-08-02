@@ -13,9 +13,11 @@ import org.elasticsearch.client.Requests
 
 object MyEsUtil {
 
+  //存放EShosts的数组
   val httpHosts = new util.ArrayList[HttpHost]
   httpHosts.add(new HttpHost("192.168.1.170",9200,"http"))
 
+  //获取ES Sink
   def getEsSink(indexName:String):ElasticsearchSink[String] = {
     val esfunc: ElasticsearchSinkFunction[String] = new ElasticsearchSinkFunction[String] {
       override def process(t: String, runtimeContext: RuntimeContext, requestIndexer: RequestIndexer): Unit = {

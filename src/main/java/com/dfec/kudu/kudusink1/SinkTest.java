@@ -34,7 +34,7 @@ public class SinkTest {
             @Override
             public Map<String, Object> map(UserInfo value) throws Exception {
                 HashMap<String, Object> map = new HashMap<>();
-                map.put("userid", value.getId());
+                map.put("id", value.getId());
                 map.put("name", value.getName());
                 map.put("age", value.getAge());
 //                Set<String> keySet = map.keySet();
@@ -47,9 +47,10 @@ public class SinkTest {
         });
 
         // Sink到Kudu
-        String kuduMaster = "192.168.1.170";
-        String tableName = "impala::kudu_data.test_flink_kudu_yfl";
+        String kuduMaster = "192.168.1.181";
+        String tableName = "impala::ods.test_flink_kudu_yfl";
         mapSource.addSink(new SinkKudu(kuduMaster,tableName));
+
 
         dataStreamSource.print();
 

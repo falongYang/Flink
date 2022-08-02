@@ -17,14 +17,15 @@ object testSourcekafka {
 
     // 设置启动检查点
     environment.enableCheckpointing(5000)
+    // 设置事件时间为窗口
     environment.setStreamTimeCharacteristic(TimeCharacteristic.EventTime)
-    //从kafka读取数据
+    // 从kafka读取数据
     val properties = new Properties()
-    properties.setProperty("bootstrap.servers","192.168.1.171:9092")
-    properties.setProperty("group.id", "consumer-group")
+    properties.setProperty("bootstrap.servers","192.168.1.182:9092")
+    properties.setProperty("group.id", "consumer-three")
     properties.setProperty("key.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
     properties.setProperty("value.deserializer", "org.apache.kafka.common.serialization.StringDeserializer")
-    properties.setProperty("auto.offset.reset", "latest")
+    properties.setProperty("auto.offset.reset", "earliest")
 
     //创建一个source
     /**
@@ -32,17 +33,17 @@ object testSourcekafka {
       * (topic ,值的反序列化工具，Properties）
       *
       */
-      val s: DataStreamSource[String] = environment.addSource(new FlinkKafkaConsumer010[String]("estest",new SimpleStringSchema(),properties))
+      val s: DataStreamSource[String] = environment.addSource(new FlinkKafkaConsumer010[String]("fj",new SimpleStringSchema(),properties))
 
 //    val source: FlinkKafkaConsumer010[String] = MyKafkaUtil.getKafkaSource("estest")
 //    val s: DataStreamSource[String] = environment.addSource(source)
     s.print("stream: ").setParallelism(1)
 
-    val sink: ElasticsearchSink[String] = MyEsUtil.getEsSink("es_flink")
+    //val sink: ElasticsearchSink[String] = MyEsUtil.getEsSink("es_flink")
 
     // 测试kudu
 
-    s.addSink(sink)
+    //s.addSink(sink)
 
     environment.execute()
   }

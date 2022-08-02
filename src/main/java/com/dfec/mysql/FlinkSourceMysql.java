@@ -24,6 +24,7 @@ public class FlinkSourceMysql {
     public static void main(String[] args) throws Exception {
         StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
         MysqlSourceUtils mysqlSourceUtils = new MysqlSourceUtils();
+        //flink 调用addSource方法 获取数据源
         DataStreamSource dataStreamSource = env.addSource(mysqlSourceUtils);
 
         // 测试转换

@@ -5,6 +5,9 @@ import org.apache.flink.streaming.api.scala.{DataStream, StreamExecutionEnvironm
 import org.apache.flink.streaming.connectors.kafka.{FlinkKafkaConsumer010, FlinkKafkaConsumer011}
 import org.apache.flink.api.scala._
 
+/**
+  * 通过kafka消费者源 读取数据
+  */
 object StreamApiApp {
   def main(args: Array[String]): Unit = {
     // 1.env

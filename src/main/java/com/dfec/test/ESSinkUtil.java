@@ -39,7 +39,7 @@ public class ESSinkUtil {
     public static <T> void addSink(List<HttpHost> hosts, int bulkFlushMaxActions, int parallelism,
                                    SingleOutputStreamOperator<T> data, ElasticsearchSinkFunction<T> func,
                                    ParameterTool parameterTool) {
-        ElasticsearchSink.Builder<T> esSinkBuilder = new ElasticsearchSink.Builder<>(hosts, func);
+        ElasticsearchSink.Builder<T> esSinkBuilder = new ElasticsearchSink.Builder<T>(hosts, func);
         esSinkBuilder.setBulkFlushMaxActions(bulkFlushMaxActions);
         esSinkBuilder.setFailureHandler(new RetryRequestFailureHandler());
         //todo:xpack security
@@ -54,7 +54,7 @@ public class ESSinkUtil {
      */
     public static List<HttpHost> getEsAddresses(String hosts) throws MalformedURLException {
         String[] hostList = hosts.split(",");
-        List<HttpHost> addresses = new ArrayList<>();
+        List<HttpHost> addresses = new ArrayList<HttpHost>();
         for (String host : hostList) {
             if (host.startsWith("http")) {
                 URL url = new URL(host);

@@ -9,6 +9,8 @@ import org.apache.kudu.client.*;
 import java.io.ByteArrayOutputStream;
 import java.io.ObjectOutputStream;
 import java.util.Map;
+import java.util.Set;
+
 import org.apache.log4j.Logger;
 
 /**
@@ -43,8 +45,9 @@ public class SinkKudu extends RichSinkFunction<Map<String,Object>> {
         out = new ByteArrayOutputStream();
         os = new ObjectOutputStream(out);
         client = new KuduClient.KuduClientBuilder(kuduMaster).build();
-        //System.out.println("client:" + client);
+        System.out.println("client:" + client);
         table = client.openTable(tableName);
+        schema = table.getSchema();
         kuduSession = client.newSession();
         kuduSession.setFlushMode(SessionConfiguration.FlushMode.AUTO_FLUSH_BACKGROUND);
     }
@@ -52,12 +55,20 @@ public class SinkKudu extends RichSinkFunction<Map<String,Object>> {
     @Override
     public void invoke(Map<String, Object> map, Context context) throws Exception {
 
+        Set<String> keySet = map.keySet();
+                for (String s : keySet) {
+                    Object o = map.get(s);
+                    System.out.println(s + "=" + o);
+                }
         long l = context.currentWatermark();
+        System.out.println("L:" + l);
         if (map == null){
             return;
         }
+        System.out.println("===============");
         try {
             int columnCount = schema.getColumnCount();
+            System.out.println("columnCount:" + columnCount);
             Insert insert = table.newInsert();
             PartialRow row = insert.getRow();
             for (int i = 0; i < columnCount; i++) {

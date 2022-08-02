@@ -2,8 +2,7 @@ package com.dfec.flink;
 
 
 import org.apache.flink.api.common.serialization.SimpleStringSchema;
-import org.apache.flink.api.java.tuple.Tuple;
-import org.apache.flink.api.java.tuple.Tuple2;
+import org.apache.flink.api.java.tuple.*;
 import org.apache.flink.streaming.api.TimeCharacteristic;
 import org.apache.flink.streaming.api.datastream.SingleOutputStreamOperator;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;
@@ -44,7 +43,7 @@ public class FlinkSourceKafka {
                 .apply(new WindowFunction<Tuple2<String, Long>, Tuple2<String, Long>, Tuple, TimeWindow>() {
                     @Override
                     public void apply(Tuple tuple, TimeWindow window, Iterable<Tuple2<String, Long>> input, Collector<Tuple2<String, Long>> out) throws Exception {
-                        long sum = 0l;
+                        long sum = 0L;
                         int count = 0;
                         for (Tuple2<String, Long> record : input) {
                             sum += record.f1;
@@ -55,7 +54,6 @@ public class FlinkSourceKafka {
                         out.collect(result);
                     }
                 });
-
 
 
         keyedStream.print();
